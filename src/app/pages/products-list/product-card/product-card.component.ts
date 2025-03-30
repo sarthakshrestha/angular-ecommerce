@@ -8,9 +8,7 @@ import { CartService } from '../../../services/cart.service';
   standalone: true,
   imports: [PrimaryButtonComponent],
   template: `
-    <div
-      class="bg-white shadow-md rounded-lg p-6 grid grid-cols-3 gap-6 relative"
-    >
+    <div class="bg-white shadow-sm rounded-lg p-6  gap-6 relative">
       <div class="mx-auto">
         <img
           [src]="product().image"

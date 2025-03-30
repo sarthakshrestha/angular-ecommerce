@@ -7,7 +7,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
   standalone: true,
   imports: [ProductCardComponent],
   template: `
-    <div className="p-8 grid grid-cols-3 gap-2">
+    <div class="p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       @for (product of products(); track product.id) {
       <app-product-card [product]="product" /> }
     </div>
